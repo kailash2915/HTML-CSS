@@ -1,0 +1,117 @@
+section {
+    max-width: 100%;
+}
+
+#homesectionone {
+    background-image: url("https://images.pexels.com/photos/853427/pexels-photo-853427.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: center 42%;
+}
+
+div#\#homefirstoverlay {
+    min-height: 350px;
+    height: 75vh;
+    max-height: 80vh;
+    width: 100%;
+}
+
+#homesectiontwo .content div {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#homesectiontwo .image-wrap img {
+    max-width: 100%;
+}
+
+
+/* Services Section */
+
+#homesectionthree .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 2rem;
+    padding: 1rem 0.5rem 1rem;
+}
+
+.box {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.box img {
+    max-width: 105%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    min-height: 120px;
+    max-height: 50vh;
+    transition: transform 0.5s ease;
+}
+
+.box p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.box button {
+    min-width: 55%;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .home-subhead{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.75rem;
+        max-width: 75%;
+    }
+    #homesectiontwo .content div {
+        float: left;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    #homesectiontwo .content div:first-child {
+        padding-right: 15px;
+        width: 56%;
+    }
+    #homesectiontwo .content div:last-child {
+        padding-left: 15px;
+        width: 44%;
+    }
+    #homesectiontwo .image-wrap {
+        /* padding: 15px; */
+    }
+    #homesectionthree .box-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 1rem;
+    }
+    .box img:hover {
+        opacity: 0.95;
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width:700px) {
+    #homesectionthree .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        padding: 1rem 0.5rem 1rem;
+    }
+    .box {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .box img {
+        max-width: 90%;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+    .box button {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}

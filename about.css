@@ -1,0 +1,338 @@
+/*-------------About Page---------*/
+.row{
+    text-align: center;
+}
+#read-more{
+    text-align: center;
+}
+.tagline {
+  color: #888;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.sec-title {
+  color: #1e2528;
+  text-align: center;
+  
+}
+
+.sec-heading.p{
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+
+
+
+
+p span a {
+    text-decoration: none;
+    color: white;
+}
+#slider-content{
+    text-transform: uppercase;
+}
+.breadcrumbs {
+    
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    z-index: 99;
+    font-weight: 400;
+    letter-spacing: 4px; 
+}
+
+
+
+#aboutsection {
+    background-image: url("https://cdn.pixabay.com/photo/2014/11/13/21/21/hair-salon-529903_1280.jpg");
+}
+div#\#aboutfirstoverlay {
+    min-height: 350px;
+    height: 400px;
+    max-height: 80vh;
+    width: 100%;
+}
+
+#aboutsectiontwo .content div{
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+#aboutsectiontwo .image-wrap img{
+    max-width: 100%;
+}
+#aboutsectionfour .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 0.5rem;
+    padding: 1rem 4rem 3rem;
+}
+@media (min-width: 1024px) {
+    #aboutsectiontwo .content div {
+        float: left;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    #aboutsectiontwo .content div:first-child {
+        padding-right: 15px;
+        width: 56%;
+    }
+    #aboutsectiontwo .content div:last-child {
+        padding-left: 15px;
+        width: 44%;
+    }
+    /* #homesectiontwo .image-wrap {
+        /* padding: 15px; */
+    /* } */
+    #aboutsectionfour .box-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+  
+    }
+}
+#aboutsectionthree .content div {
+    margin-bottom: 2rem;
+    text-align: center;
+    /* margin-left:0px; */
+}
+
+#aboutsectionthree .image-wrap img {
+    max-width: 100%;
+}
+@media (min-width: 1024px) {
+    .sec-title{
+      font-size: 40px;
+    }
+    .sec-heading.p{
+      margin-left: auto;
+      margin-right: auto;
+      /* margin-bottom: 1.75rem; */
+      max-width: 75%;
+    }
+    
+    #aboutsectionthree .content div {
+        float: left;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    #aboutsectionthree .content div:first-child {
+        padding-left: 15px;
+        width: 44%;
+    }
+    #aboutsectionthree .content div:last-child {
+        
+        padding-left: 70px;
+        width: 56%;
+    }
+    /* #homesectiontwo .image-wrap {
+        /* padding: 15px; */
+    /* } */
+    #aboutsectionfour .box-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .testimonial.image-wrap .content-padding{ /* testimonial boxes */
+      min-height: 45px;
+    }
+}
+
+/* #aboutsectionfour .content div{
+    text-align: center;
+    padding-bottom: 2rem;
+
+} */
+@media (max-width:700px) {
+    #aboutsectionfour .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box img {
+        max-width: 90%;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+}
+/* *****************************************Testimonial strts********************************** */
+
+.content-padding{
+    padding: 0px 20px;
+}
+.testimonials{
+  padding: 20px 0;
+  background:#FFE8D2 ;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #8C584A;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px 0px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.col:hover{
+  cursor:pointer;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #c58e5ad7;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+    .col{
+    flex: 100%;
+    max-width: 80%;
+    width: 100%;
+    
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col{
+    flex: 100%;
+    max-width: 100%;
+    width: 100%;
+    }
+} 
+
+@media (min-width: 1024px) {
+  .testimonials{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* *************************************Testimonial Ends************************************************ */
+/* ***************************************Team Start********************************************************* */
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.card span{
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.card h2{
+    font-size: 22px;
+    margin-bottom: 0;
+
+}
+.card{
+  background: white;
+  width: 280px;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+.card-image{
+  height:386px;
+  margin-bottom:15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.team-1{
+  background-image: url('../images/team/1.jpg');
+}
+.team-2{
+  background-image: url('../images/team/2.jpg');
+}
+.team-3{
+  background-image: url('../images/team/3.jpg');
+}
+.card .social-media {
+  margin-top: 0;
+  margin-bottom: 27px;
+  
+}
+.blackiconcolor {
+  size:5px;  
+  color:black;
+}
+.card .social-media a{
+  border: 1px solid #30383b;
+    border-radius: 50%;
+    color: #30383b;
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    margin:0;
+    height: 30px;
+    width: 35px;
+}
+.card .social-media a:hover {
+  
+  border-color: #8c584A;
+  
+}
+.card .social-media a i:hover{
+  color:#8c584A;
+
+}
+.card:hover{
+   cursor:pointer;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+/* ***************************************Team End********************************************************* */
